@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+</style>
+</head>
+<body>
+    
+<form action="/booking.js">
+    <label for="name">Name</label>
+    <input id="name" type="text" name="user-input" />
+    <label for="email">E-Mail-Addresse</label>
+    <input id="email" type="email" name="user-input" />
+    <label for="number">Telefonnummer</label>
+    <input id="number" type="number" name="user-input" />
+
+    <br/>
+    <br/>
+
+    <label for="date1">Wann wollen Sie anreisen?</label>
+    <input id="date1" type="date" name="getting-there" />
+    <label for="date2">Wann wollen Sie abreisen?</label>
+    <input id="date2" type="date" name="departure" />
+
+    <br/>
+    <br/>
+
+
+    <label for="room-options">Welchen Zimmertyp moechten Sie haben?</label>
+    <select id="room-options" name="room-options">
+        <option value="single-room">Einzelzimmer</option>
+        <option value="double-room">Doppelzimmer</option>
+        <option value="suite">Suite</option>
+    </select>
+
+    <br/>
+    <br/>
+
+
+    <input type="submit">
+</form>
+
+</body>
+</html>
