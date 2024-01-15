@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+<style>
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+</style>
+</head>
+<body>
+    
+    <form action="/course_registration.js">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" />
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" />
+
+        <br/>
+        <br/>
+
+        <label for="sport-options">Welchen Kurs möchten Sie besuchen?</label>
+        <select id="sport-options">
+            <option value="yoga">Yoga</option>
+            <option value="pilates">Pilates</option>
+            <option value="crossfit">Crossfit</option>
+        </select>
+
+        <br/>
+        <br/>
+
+        <p>Wann möchten Sie trainieren?</p>
+        <div>
+            <label for="morning">Morgen</label>
+            <input id="morning" type="radio" name="time">
+        </div>
+        <div>
+            <label for="midday">Mittag</label>
+            <input id="midday" type="radio" name="time">
+        </div>
+        <div>
+            <label for="evening">Abend</label>
+            <input id="evening" type="radio" name="time">
+        </div>
+
+        <br/>
+        <br/>
+
+
+        <label for="allergic">Allergien</label>
+        <input id="allergic" type="checkbox" name="special"/>
+        <label for="allergic">Koerperliche Einschraenkungen</label>
+        <input id="allergic" type="checkbox" name="special"/>
+
+        <br/>
+        <br/>
+
+
+        <input type="submit"/>
+    </form>
+
+</body>
+</html>
