@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+</style>
+</head>
+<body>
+
+<form action="/feedback.js">
+    <label for="productname-or-id">Produktname/Produkt-ID</label><br/>
+    <input type="text" id="productname-or-id" name="productname-or-id">
+    <br/>
+    <br/>
+    <p>How much do you like us?</p>
+    <div class="evaluation-class">
+        <input type="radio" id="onestar" name="evaluation" />
+        <label for="onestar">One Star</label>
+        <input type="radio" id="twostars" name="evaluation" />
+        <label for="twostars">Two Stars</label>
+        <input type="radio" id="threestars" name="evaluation" />
+        <label for="threestars">Three Stars</label>
+        <input type="radio" id="fourstars" name="evaluation" />
+        <label for="fourstars">Four Stars</label>
+        <input type="radio" id="fivestars" name="evaluation" />
+        <label for="fivestars">Five Stars</label>
+    </div>
+    <br/>
+    <br/>
+    <textarea></textarea>
+    <input type="submit" />
+</form>
+
+</body>
+</html>
